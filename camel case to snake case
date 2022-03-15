@@ -1,0 +1,10 @@
+import re
+s="HeyConvertThisSnakeCaseToCamelCase"
+k=[]
+k=(re.findall('[A-Z][^A-Z]*',s))
+for i in range(len(k)):
+    k[i]=k[i].lower()
+print(k)
+m=""
+m="_".join(k)
+print(m)
